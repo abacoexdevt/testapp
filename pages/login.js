@@ -7,7 +7,7 @@ import { Form, Input, Button, Checkbox, message } from 'antd';
 import styles from '../styles/Login.module.scss';
 import 'antd/dist/antd.css';
 import * as yup from 'yup';
-import { auth } from '../sdk';
+// import { auth } from '../sdk';
 
 const Login = ({ application = 'AML Portal', title, keywords, description }) => {
 	const router = useRouter();
@@ -24,9 +24,10 @@ const Login = ({ application = 'AML Portal', title, keywords, description }) => 
 		validationSchema,
 		onSubmit: async values => {
 			try {
-				const response = await auth.loginWithEmail(values);
+				// const response = await auth.loginWithEmail(values);
+				console.log('values', values);
 				window.location = '/';
-				message.success(response.message);
+				// message.success(response.message);
 			} catch (error) {
 				console.log(error);
 				message.error(error.message);

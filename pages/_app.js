@@ -8,7 +8,7 @@
 import '../styles/globals.css';
 import 'antd/dist/antd.css';
 import nextConfig from 'next/config';
-import { initialize } from '../sdk';
+// import { initialize } from '../sdk';
 import store from '../redux/store';
 import { Provider } from 'react-redux';
 
@@ -16,9 +16,9 @@ const { publicRuntimeConfig } = nextConfig();
 const { CUSTOM_ENV: environment } = publicRuntimeConfig;
 
 function MyApp({ Component, pageProps }) {
-	const { token } = pageProps;
-	initialize({ environment, token });
-	// console.log('pageProps', pageProps);
+	// const { token } = pageProps;
+	// initialize({ environment, token });
+
 	return (
 		<Provider store={store}>
 			<Component {...pageProps} />
