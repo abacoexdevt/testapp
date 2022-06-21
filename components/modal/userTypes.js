@@ -7,7 +7,7 @@ import { isEqual } from 'lodash';
 
 import { create, setForm, toggle, update } from '../../redux/actions/userTypes';
 
-const UserModal = () => {
+const UserTypeModal = () => {
 	const dispatch = useDispatch();
 	const { modal, form, formLoading } = useSelector(
 		({ userTypes }) => ({ modal: userTypes.modal, form: userTypes.form, formLoading: userTypes.formLoading }),
@@ -121,4 +121,4 @@ const UserModal = () => {
 	);
 };
 
-export default UserModal;
+export default UserTypeModal;

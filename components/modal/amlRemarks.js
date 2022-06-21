@@ -11,7 +11,7 @@ import { create, setForm, toggle, update } from '../../redux/actions/amlRemarks'
 import dayjs from 'dayjs';
 import moment from 'moment';
 
-const riskModal = ({ account }) => {
+const AmlModal = ({ account }) => {
 	const dispatch = useDispatch();
 	const router = useRouter();
 	const { query } = router;
@@ -241,4 +241,4 @@ const riskModal = ({ account }) => {
 	);
 };
 
-export default riskModal;
+export default AmlModal;

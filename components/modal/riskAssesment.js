@@ -9,7 +9,7 @@ import { isEqual } from 'lodash';
 import { create, fetch as fetchRisk, setForm, toggle, update } from '../../redux/actions/riskAssesment';
 import { fetch as fetchCases } from '../../redux/actions/cases';
 
-const riskModal = ({ account }) => {
+const RiskModal = ({ account }) => {
 	const dispatch = useDispatch();
 	const router = useRouter();
 	const { query } = router;
@@ -194,4 +194,4 @@ const riskModal = ({ account }) => {
 	);
 };
 
-export default riskModal;
+export default RiskModal;

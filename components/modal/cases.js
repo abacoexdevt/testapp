@@ -9,7 +9,7 @@ import { create, setForm, toggle, update } from '../../redux/actions/cases';
 
 import dayjs from 'dayjs';
 
-const casesModal = ({ customers = [] }) => {
+const CaseModal = ({ customers = [] }) => {
 	const dispatch = useDispatch();
 	const [inList, setInList] = useState(true);
 	const [selectedCustomer, setSelectedCustomer] = useState(null);
@@ -580,4 +580,4 @@ const casesModal = ({ customers = [] }) => {
 	);
 };
 
-export default casesModal;
+export default CaseModal;

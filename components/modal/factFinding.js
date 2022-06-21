@@ -10,7 +10,7 @@ import { create, setForm, toggle, update } from '../../redux/actions/customers';
 import dayjs from 'dayjs';
 import moment from 'moment';
 
-const riskModal = () => {
+const FactModal = () => {
 	const dispatch = useDispatch();
 	const { modal, form, formLoading } = useSelector(
 		({ customers }) => ({ modal: customers.modal, form: customers.form, formLoading: customers.formLoading }),
@@ -139,4 +139,4 @@ const riskModal = () => {
 	);
 };
 
-export default riskModal;
+export default FactModal;
